@@ -9,58 +9,429 @@
     <meta name="keywords" content="">
     <meta name="description" content="Proyecto integrador de #YoProgramo">
     <meta name="author" content="ML">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <head class="">
 
+<body>
+
+    <head class="p-5">
+        <nav class="">
+            <a class=""
+                href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+                <img src="img/yoprogramo.png" width="" height="" alt="Logo de Argentina Programa, #YoProgramo">
+            </a>
+            <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#menu01"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu01" class="">
+                <ul class="">
+                    <li class="">
+                        <a class="" href="#acerca-de">Acerca de</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#educacion">Educación</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#skills">Habilidades</a>
+                    </li>
+                </ul>
+                <ul class="">
+                    <li class="">
+                        <a class="" href="mailto:mimail@midominio.com" title="Email">email</a>
+                    </li>
+                    <li class="">
+                        <a class=""
+                            href="https://api.whatsapp.com/send?phone=5492236837984&text=Hola,%20en%20breve%20te%20estaré%20respondiendo.%20%20Gracias."
+                            title="Whatsapp">wsp</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="fb://https://www.facebook.com/jorgelinacirasa" title="Facebook">fbook</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="instagram://user?username=jorgelinacirasa" title="Instagram">instg</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#f-login" title="Login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="baner">
+            <!--<a href="#" class="edt"><i class="bi bi-pen"></i></a>-->
+            <button class="edt" type="button">
+                Editar
+            </button>
+        </div>
     </head>
     <main>
-        <section id="acercaDe" class="">
-            <header>
-                <h2 class=""><i>Acerca de</i></h2>
-            </header>
+        <section id="acerca-de" class="">
+            <div>
+                <img id="mifoto" class="" src="img/rostro1.jpeg" width="194px" height="194px" alt="Mi imagen de perfil">
+                <!-- <a href="#" class="me-right"><i class="bi bi-pen"></i>edt</a> -->
+                <button class="edt" type="button">
+                    Editar
+                </button>
+            </div>
             <div class="">
-                
+                <div class="">
+                    <h2 id="nombre" class=""><strong>Marius Baracus</strong></h2>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                </div>
+                <div class="">
+                    <p id="titulos"><i class="bi bi briefcase"></i><strong> Web Developer Full Stack Jr</strong></p>
+                    <p id="residencia"><i class="bi bi-house-door"></i>Mar del Plata, AR</p>
+                    <p id="email"><i class="bi bi-envelope m-3"></i>micuenta@dominio.com</p>
+                    <p id="celular"><i class="bi bi-phone"></i>11 1234-5678</p>
+                </div>
+                <div class="">
+                    <header>
+                        <h2 class=""><i>Acerca de</i></h2>
+                    </header>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <p id="txt_acerca-de_1" class="">
+                        <em>Lorem ipsum.</em> dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam
+                        dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum
+                        luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet..
+                    </p>
+                    <p id="txt_acerca-de_2" class="">
+                        Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra
+                        egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et.
+                        <strong><i>desarrollo web full stack.</i></strong>
+                    </p>
+                    <div>
+                        <!-- Contenedor con un INPUT para edición del parrafo desde teclado -->
+                        <input id="edt_acerca-de_1" class="" type="text" oninput="edt_Contenido(this.value)">
+                    </div>
+                    <!-- Input para edición del párrafo desde un archivo -->
+                    <input id="edt_acerca-de_2" class="" type="file" onchange="showFile(this)">
+                </div>
             </div>
         </section>
         <section id="experiencia" class="">
-            <header>
+            <header class="">
                 <h2 class=""><i>Experiencia</i></h2>
+                <button class="new" type="button">
+                    Nuevo
+                </button>
             </header>
-            <div class="">
-                
-            </div>
+            <article id="exp04" class="">
+                <div class="logo_empresa">
+                    <img src="img/logoEmpresa01.png" title="nombreEmpresa" alt="Logo de la empresa nombreEmpresa">
+                </div>
+                <h3 class="d-inline">nombreEmpresa</h3>
+                <p class="">yyyy/mm a yyyy/mm</p>
+                </div>
+                <p class="">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.
+                    Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+                <button class="edt" type="button">
+                    Editar
+                </button>
+                <button class="cerrar" type="button">
+                    X
+                </button>
+            </article>
+            <article id="exp03" class="">
+                <div class="logo_empresa">
+                    <img src="img/logoEmpresa01.png" title="nombreEmpresa" alt="Logo de la empresa nombreEmpresa">
+                </div>
+                <h3 class="d-inline">nombreEmpresa</h3>
+                <p class="">yyyy/mm a yyyy/mm</p>
+                </div>
+                <p class="">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.
+                    Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+                <button class="edt" type="button">
+                    Editar
+                </button>
+                <button class="cerrar" type="button">
+                    X
+                </button>
+            </article>
+            <article id="exp02" class="">
+                <div class="logo_empresa">
+                    <img src="img/logoEmpresa01.png" title="nombreEmpresa" alt="Logo de la empresa nombreEmpresa">
+                </div>
+                <h3 class="d-inline">nombreEmpresa</h3>
+                <p class="">yyyy/mm a yyyy/mm</p>
+                </div>
+                <p class="">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.
+                    Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+                <button class="edt" type="button">
+                    Editar
+                </button>
+                <button class="cerrar" type="button">
+                    X
+                </button>
+            </article>
+            <article id="exp01" class="">
+                <div class="logo_empresa">
+                    <img src="img/logoEmpresa01.png" title="nombreEmpresa" alt="Logo de la empresa nombreEmpresa">
+                </div>
+                <h3 class="d-inline">nombreEmpresa</h3>
+                <p class="">yyyy/mm a yyyy/mm</p>
+                </div>
+                <p class="">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.
+                    Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+            </article>
         </section>
-        <section id="educacion" class="">
-            <header>
+        <section id="educación" class="">
+            <header class="">
                 <h2 class=""><i>Educación</i></h2>
+                <button type="button">
+                    Nuevo
+                </button>
             </header>
-            <div class="">
-                
-            </div>
+            <article id="edu3" class="">
+                <div class="logo_institucion">
+                    <img src="img/logoInstitucion03.png" title="nombreInstitucion"
+                        alt="Logo de la institución nombreInstitucion">
+                </div>
+                <h3 class="d-inline">nombreInstitucion</h3>
+                <p class="">yyyy/mm a yyyy/mm</p>
+                </div>
+                <p class="">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.
+                    Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+            </article>
+            <article id="edu2" class="">
+                <div class="logo_institucion">
+                    <img src="img/logoInstitucion02.png" title="nombreInstitucion"
+                        alt="Logo de la institución nombreInstitucion">
+                </div>
+                <h3 class="d-inline">nombreInstitucion</h3>
+                <p class="">yyyy/mm a yyyy/mm</p>
+                </div>
+                <p class="">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.
+                    Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+            </article>
+            <article id="edu1" class="">
+                <div class="logo_institucion">
+                    <img src="img/logoInstitucion01.png" title="nombreInstitucion"
+                        alt="Logo de la institución nombreInstitucion">
+                </div>
+                <h3 class="d-inline">nombreInstitucion</h3>
+                <p class="">yyyy/mm a yyyy/mm</p>
+                </div>
+                <p class="">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.
+                    Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+            </article>
+            <aside class="">
+                <header class="">
+                    <h2 class=""><i>Cursos & Seminarios</i></h2>
+                    <button class="new" type="button">
+                        Nuevo
+                    </button>
+                </header>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+                <div>
+                    <p class="d-inline">yyyy/mm</p>
+                    <p class="">nombreEntidad</p>
+                    <p class="">descripción del curso</p>
+                    <button class="edt" type="button">
+                        Editar
+                    </button>
+                    <button class="cerrar" type="button">
+                        X
+                    </button>
+                </div>
+            </aside>
         </section>
         <section id="Habilidades" class="">
-            <header>
+            <header class="">
                 <h2 class=""><i>Habilidades</i></h2>
+                <button class="edt" type="button">
+                    Editar
+                </button>
+                <button class="cerrar" type="button">
+                    X
+                </button>
             </header>
-            <div class="">
-                
+            <div class="container-sm bg-section">
+                <div class="container py-4">
+                    <p class="mb-0"><i class="bi bi-briefcase m-3 text-primary"></i>Responsabilidad</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success bg-opacity-75" role="progressbar" style="width: 100%"
+                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    </div>
+                    <p class="mb-1"><i class="bi bi-house-door m-3 text-black"></i>Trabajo en Equipo</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success bg-opacity-75" role="progressbar" style="width: 90%"
+                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <p class="mb-0"><i class="bi bi-phone m-3 text-danger"></i>Resolución de Problemas</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success bg-opacity-75" role="progressbar" style="width: 95%"
+                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                    <p class="mb-0"><i class="bi bi-envelope m-3 text-success"></i>Desarrollo Web</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success bg-opacity-75" role="progressbar" style="width: 40%"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="proyectos" class="">
-            <header>
+            <header class="">
                 <h2 class=""><i>Proyectos</i></h2>
+                <button class="new" type="button">
+                    Nuevo
+                </button>               
             </header>
             <div class="">
-                
+                <button class="edt" type="button">
+                    Editar
+                </button>
+                <button class="cerrar" type="button">
+                    X
+                </button>
             </div>
         </section>
         <footer class="">
             <p class="">Desarrollado por MRL - Proyecto integrador de #YoProgramo 2022.</p>
         </footer>
-    </main>    
+    </main>
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/main.js"></script>
 </body>
 

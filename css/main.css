@@ -1,7 +1,10 @@
 /* Hoja de Estilos del PortFolio del Proyecto Integrador #YoProgramo */
-html{
+html {
     box-sizing: border-box;
 }
-*, *::before, *::after{
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
